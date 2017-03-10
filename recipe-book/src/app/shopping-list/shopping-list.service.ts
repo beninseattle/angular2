@@ -12,4 +12,7 @@ export class ShoppingListService {
   addItems( newItems: Ingredient[] ){
     Array.prototype.push.apply( this.items, newItems );
   }
+  addItem( newItem: Ingredient ){
+    this.addItems([newItem]);
+  }
 }
